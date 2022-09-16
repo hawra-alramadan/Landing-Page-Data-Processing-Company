@@ -1,3 +1,48 @@
+:root{
+   
+    --clr-primary-400: hsl(28, 87%, 62%);
+    --clr-secondary-400:  hsl(256, 24%, 56%);
+    
+    --clr-accent-400: hsl(158, 73%, 77%);
+
+    --clr-ntural-900: hsl(0, 0, 0);
+    --clr-ntural-300:hsl(0, 0, 71);
+    --clr-ntural-100:hsl(0, 0, 100);
+
+
+    --clr-bg: linear-gradient(222.26deg, #3B1D60 1.22%, #040D3E 106.28%);
+
+    --ff-primary: 'Roboto', sans-serif;
+    --ff-secondary: 'Inter', sans-serif;
+    --ff-accent: 'Rubik', sans-serif;
+
+    --ff-body: var(--ff-primary);
+    --ff-heading: var(--ff-secundary);
+    --ff-btn: var(--ff-accent);
+
+    --fw-n: 400;
+    --fw-m: 500;
+    --fw-b: 700;
+
+    --fs-100: .75rem;
+    --fs-200: .87rem;
+    --fs-300: .937rem;
+    --fs-400: 1rem;
+    --fs-500: 1.125rem;/*18*/
+    --fs-600: 1.65rem;/*26*/
+    --fs-700: 2.25rem;/*36*/
+    --fs-800: 2.62rem;/*42*/
+    --fs-900: 2.75rem;/*44*/
+
+    --fs-body: var(--fs-400);
+    --fs-primary-heading: var(--fs-900);
+    --fs-secondary-heading: var(--fs-800);
+    --fs-tertiary-heading: var(--fs-700);
+    --fs-fourth-heading: var(--fs-600);
+
+    --fs-nav: var(--fs-200);
+}
+
 
 /* Box sizing rules */
 *,
