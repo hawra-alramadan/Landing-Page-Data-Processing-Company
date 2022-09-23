@@ -15,10 +15,16 @@
 <body>
     <header class="primary-header">
         <div class="container">
-            <img src="images/logo.svg" alt="">
             
-            <nav class="primary-navigation">
-                <ul role="list" class="nav-list">
+            <img src="images/logo.svg" alt="">
+            <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
+                <img class="icon-open" src="images/icon_open.svg" alt="" aria-hidden="true">
+                <img class="icon-close" src="images/icon_Close.svg" alt="" aria-hidden="true">
+                <span class="visually-hidden">menu</span>
+            </button>
+            
+            <nav class="primary-navigation" id="primary-navigation">
+                <ul role="list" class="nav-list" >
 
                     <li><a href="#">about</a></li>
                     <li><a href="#">callery</a></li>
@@ -33,11 +39,12 @@
 
             </nav>
         </div>
+      
     </header>
       
     <main>
         <section>
-            <div class="container">
+            <div class="container padding-block-500">
                 <div class="even-columns">
                     
                         <div>
@@ -200,7 +207,7 @@
 
                 </section>
 
-                
+
         <section>
 
             <div class="container">
@@ -294,9 +301,9 @@
 
                     <div>
                         <ul role="list" aria-label="Social links">
-                            <li><a aria-label="Email" href="#"></a></li>
-                            <li><a aria-label="Twitter" href="#"></a></li>
-                            <li><a aria-label="Facebok" href="#"></a></li>
+                            <li><a aria-label="Email" href="#">1</a></li>
+                            <li><a aria-label="Twitter" href="#">1</a></li>
+                            <li><a aria-label="Facebok" href="#">1</a></li>
                         </ul>
                     </div>
                 </div>
@@ -363,5 +370,10 @@
         </section>
     </footer>
 
+
+
+    <script src="main.js"></script>
 </body>
 </html>
+
+
