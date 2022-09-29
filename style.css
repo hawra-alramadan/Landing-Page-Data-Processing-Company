@@ -4,11 +4,13 @@
     --clr-secondary-400:  hsl(256, 24%, 56%);
     
     --clr-accent-400: hsl(158, 73%, 77%);
+    --clr-accent-700:	hsl(238, 54%, 21%);
     --clr-accent-800: linear-gradient(222.26deg, #3B1D60 1.22%, #040D3E 106.28%);
     --clr-accent-900: hsl(238, 64%, 16%);
 
     --clr-ntural-900: hsl(0, 0%, 0%);
     --clr-ntural-300:hsl(0, 0%, 71%);
+    --clr-ntural-400:hsl(0, 0%, 71%,0.4);
     --clr-ntural-100:hsl(0, 0%, 100%);
 
     --ff-primary: 'Roboto', sans-serif;
@@ -299,6 +301,10 @@ text-align: center;
 .justify-self-end{
   justify-self: end;
 }
+
+.v-center {
+  align-items: center;
+}
 /* Style */
 
 body {
@@ -405,6 +411,45 @@ p {
 .brand-card {
   opacity: 0.3;
 }
+
+/* call-to-action */
+
+.call-to-action {
+  background: url("images/bg-call-\ to-action.svg.svg") top no-repeat ;
+  background-size:cover;
+}
+
+.bg-call{
+  background: var(--clr-accent-700);
+  max-width: 58.75rem;
+  min-height: 20.25rem;
+  border-radius: 5px;
+}
+
+.form input{
+  min-width: 18rem;
+  min-height: 3.5rem;
+  padding: 0 1em 0 1.2em;
+  border-radius: 4px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border: none;
+  background-color:var(--clr-ntural-400);
+}
+
+.form input:focus{
+  outline: none;
+}
+
+.form .btn{
+  min-width: 8rem;
+  min-height: 3.5rem;
+  border-radius: 4px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border: none;
+}
+
 
 @media ( max-width:50em) {
 
