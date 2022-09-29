@@ -173,7 +173,7 @@ border: 0 !important;
 }
 
 .bg-accent-800 {
-  background-color: var(--clr-accent-800);
+  background: var(--clr-accent-800);
 }
 
 .bg-accent-900 {
@@ -213,6 +213,9 @@ font-family: var(--ff-primary);
   line-height: 1.2;
 }
 
+.fs-secondary-heading {
+  font-size: var(--fs-secondary-heading);
+}
 
 .fs-third-heading {font-size: var(--fs-third-heading);}
 .fs-fourth-heading {font-size: var(--fs-fourth-heading);}
@@ -265,17 +268,37 @@ font-family: var(--ff-primary);
   --max-width: 1092px;
   --padding: 1rem;
 
+  width: min(var(--max-width), 100% - (var(--padding) * 2));
   margin-inline: auto;
 }
 
 .even-columns {
   display: grid;
-  gap: 1rem;
+  gap: 1.5rem;
   grid-auto-flow: column;
   grid-auto-columns: 1fr;
 }
 
+.flex {
+  display: flex;
+  align-items: center;
+}
 
+.column{
+  flex-direction: column;
+}
+
+.flow > * + * {
+  margin-top: var(--flow-spacer, 2em);
+}
+
+.center { 
+text-align: center;
+}
+
+.justify-self-end{
+  justify-self: end;
+}
 /* Style */
 
 body {
@@ -286,6 +309,9 @@ body {
   background-repeat: no-repeat;
 }
 
+p {
+  max-width: 70ch;
+}
 /* button */
 
 .btn {
@@ -322,13 +348,20 @@ body {
 
 /* navigation */
 
+.primary-header{
+  padding:  4rem 0;
+}
+
 .mobile-nav-toggle {
   display: none;
 }
 
+.logo {
+  padding-right: var(--size-700);
+}
+
 .nav-list{
   display: flex;
-  justify-content: ;
   gap: var(--size-400);
   font-size: var(--fs-nav);
   font-weight: var(--fw-n);
@@ -337,6 +370,7 @@ body {
 .nav-list a{
   color: var(--clr-ntural-300);
   text-decoration: none;
+  text-transform: uppercase;
 }
 
 .nav-list a:hover,
@@ -344,18 +378,49 @@ body {
       color: var(--clr-primary-400);
 }
 
+.nav-btn{
+  margin-left: auto;
+}
 
+/* wrapper */
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 45% 70%;
+}
+
+.wrapper-body{
+  left: 3rem;
+  top: 1.5rem;
+  position: relative;
+}
+
+.brands .flex {
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/* brand section */
+
+.brand-card {
+  opacity: 0.3;
+}
 
 @media ( max-width:50em) {
 
+  .even-columns {
+    display: block;
+  }
+  
   .primary-header {
-    padding-top: var(--size-600);
+    padding-top: var(--size-700);
     }
   
     .primary-navigation {
       display: none;
       position: fixed;
-      max-width: 25rem;
+      z-index: 999;
+      max-width: 35rem;
       margin-left: auto;
       margin-right: auto;
       inset: 5.5rem var(--size-400) auto;
