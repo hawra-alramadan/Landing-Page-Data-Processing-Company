@@ -318,6 +318,11 @@ body {
 p {
   max-width: 70ch;
 }
+
+.padding-top-800 {
+  padding-top: var(--size-800);
+}
+
 /* button */
 
 .btn {
@@ -448,6 +453,43 @@ p {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
   border: none;
+}
+
+/* listed-item*/
+.bg-listed-item{
+  background: url("images/bg-choice.svg") center no-repeat ;
+  background-size:cover;
+
+}
+
+.listed-items {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(18.75em, 1fr));
+	gap: 2vw;
+}
+
+.listed-items li {
+  padding-left: var(--size-500);
+}
+
+
+.listed-items li:nth-child(1){
+  list-style-image: url("images/list-1.svg");
+}
+.listed-items li:nth-child(2){
+  list-style-image: url("images/list-2-airpods.svg");
+}
+.listed-items li:nth-child(3){
+  list-style-image: url("images/list-3-LTE.svg");
+}
+.listed-items li:nth-child(4){
+  list-style-image: url("images/list-4-thunder-move.svg");
+}
+.listed-items li:nth-child(5){
+  list-style-image: url("images/list-5-attachment.svg");
+}
+.listed-items li:nth-child(6){
+  list-style-image: url("images/list-6-bulb.svg");
 }
 
 
