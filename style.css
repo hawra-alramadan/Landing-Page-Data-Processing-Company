@@ -305,6 +305,11 @@ text-align: center;
 .v-center {
   align-items: center;
 }
+
+.padding-top-800 {
+  padding-top: var(--size-800);
+}
+
 /* Style */
 
 body {
@@ -319,8 +324,8 @@ p {
   max-width: 70ch;
 }
 
-.padding-top-800 {
-  padding-top: var(--size-800);
+a {
+  text-decoration: none;
 }
 
 /* button */
@@ -417,6 +422,11 @@ p {
   opacity: 0.3;
 }
 
+
+.bg-framework {
+  background: url("images/bg-next-project.svg");
+}
+
 /* call-to-action */
 
 .call-to-action {
@@ -492,7 +502,42 @@ p {
   list-style-image: url("images/list-6-bulb.svg");
 }
 
+/* footer*/
 
+.Social-links li{
+  padding: var(--size-100);
+  background-color: var(--clr-ntural-400);
+  border-radius: 1rem;
+}
+
+.Social-links li:hover,
+.Social-links li:focus-visible {
+  background-color: var(--clr-primary-400);
+}
+
+/* footer*/
+
+.footer-nav { 
+  justify-content: space-between;
+  display: flex;
+  font-size: var(--fs-300);
+}
+
+.footer-nav h4 {
+  text-transform: capitalize;
+}
+
+.footer-nav-col a{
+  color: var(--clr-ntural-100);
+  font-weight: var(--fw-n);
+}
+
+.copyright h5{
+  text-transform: uppercase;
+}
+.copyright a{
+  text-transform: capitalize;
+}
 @media ( max-width:50em) {
 
   .even-columns {
