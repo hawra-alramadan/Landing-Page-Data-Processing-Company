@@ -310,6 +310,11 @@ text-align: center;
   padding-top: var(--size-800);
 }
 
+.left{
+  position: relative;
+  left: 10rem;
+}
+
 /* Style */
 
 body {
@@ -322,6 +327,10 @@ body {
 
 p {
   max-width: 70ch;
+}
+
+h2{
+  max-width: 30ch;
 }
 
 a {
@@ -422,10 +431,20 @@ a {
   opacity: 0.3;
 }
 
-
-.bg-framework {
-  background: url("images/bg-next-project.svg");
+.bg-invest-image{
+  width: fit-content;
+  position: absolute;
+  right: -10rem;
+  z-index: -1;
 }
+
+.framework {
+  width: 76rem;
+  position: relative;
+  top: -9.1rem;
+  left: 0.5rem;
+  z-index: -1;
+ }
 
 /* call-to-action */
 
