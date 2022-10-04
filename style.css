@@ -310,6 +310,10 @@ text-align: center;
   padding-top: var(--size-800);
 }
 
+.margin-top-800 {
+  margin-top: var(--size-800);
+}
+
 .left{
   position: relative;
   left: 10rem;
@@ -325,12 +329,22 @@ body {
   background-repeat: no-repeat;
 }
 
+h1 ,h2 ,h3,
+h4, h5 ,h6 {
+  font-family: var(--ff-heading);
+  text-transform: capitalize;
+}
+
 p {
-  max-width: 70ch;
+  max-width: 65ch;
 }
 
 h2{
   max-width: 30ch;
+}
+
+h2{
+  max-width: 40ch;
 }
 
 a {
@@ -341,6 +355,7 @@ a {
 
 .btn {
   text-decoration: none;
+  text-transform: uppercase;
   cursor: pointer;
   padding: 0.5em 1em;
   border-radius: 2px;
@@ -349,6 +364,7 @@ a {
   min-height: 2.875rem;
   font-weight: var(--fw-n);
   font-size: var(--fs-button);
+  font-family: var(--ff-btn);
 }
 
 .btn:hover,
@@ -438,11 +454,20 @@ a {
   z-index: -1;
 }
 
+/* other sections*/
+
+.bg-save {
+  position: absolute;
+  left: 0;
+  top: 120.75rem;
+}
+
 .framework {
-  width: 76rem;
+  width: 100%;
   position: relative;
-  top: -9.1rem;
-  left: 0.5rem;
+  top: -10rem;
+  left: 0.4rem;
+  margin-bottom: -11.5rem;
   z-index: -1;
  }
 
@@ -523,6 +548,11 @@ a {
 
 /* footer*/
 
+.bg-footer {
+  background: url("images/bg-footer.svg") bottom no-repeat ;
+  background-size:cover;
+}
+
 .Social-links li{
   padding: var(--size-100);
   background-color: var(--clr-ntural-400);
@@ -540,9 +570,6 @@ a {
   justify-content: space-between;
   display: flex;
   font-size: var(--fs-300);
-}
-
-.footer-nav h4 {
   text-transform: capitalize;
 }
 
